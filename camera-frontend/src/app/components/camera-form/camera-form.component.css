@@ -1,0 +1,19 @@
+.mat-form-field-class {
+    display: flex;
+    justify-content: center;
+}
+
+.form-class {
+    margin-top: 20px;
+}
+
+.buttons {
+    float: right;
+    margin-right: 22px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+.cancel-button {
+    margin-right: 10px;
+}

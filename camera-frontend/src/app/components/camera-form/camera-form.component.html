@@ -1,0 +1,26 @@
+<form [formGroup]="cameraGroup" class="form-class">
+    <mat-form-field appearance="outline" class="mat-form-field-class">
+        <mat-label>Name</mat-label>
+        <input type="text" matInput placeholder="Name" formControlName="name">
+        <mat-error *ngIf="cameraGroup.get('name').hasError('required')">This field is required.</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="mat-form-field-class">
+        <mat-label>Model</mat-label>
+        <input type="text" matInput placeholder="Model" formControlName="model">
+        <mat-error *ngIf="cameraGroup.get('model').hasError('required')">This field is required.</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="mat-form-field-class">
+        <mat-label>Resolution</mat-label>
+        <input type="number" matInput placeholder="Resolution" formControlName="resolution">
+        <mat-error *ngIf="cameraGroup.get('resolution').hasError('required')">This field is required.</mat-error>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="mat-form-field-class">
+        <mat-label>IP</mat-label>
+        <input type="text" matInput placeholder="IP" formControlName="ip">
+        <mat-error *ngIf="cameraGroup.get('ip').hasError('required')">This field is required.</mat-error>
+    </mat-form-field>
+    <div class="buttons">
+        <button mat-raised-button class="cancel-button" (click)="onCancel()">Cancel</button>
+        <button mat-raised-button color="primary" [disabled]="!cameraGroup.valid" (click)="onSubmit()">{{saveUpdateButtonLabel}}</button>
+    </div>
+</form>

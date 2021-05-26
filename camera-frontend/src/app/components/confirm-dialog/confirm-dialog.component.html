@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="dialog-actions">
+        <span></span>
+        <button mat-icon-button (click)="close()"><mat-icon>close</mat-icon></button>
+    </div>
+    <div style="text-align: center;width: 80%;margin: auto;">{{message}}</div>
+    <div class="buttons">
+        <button mat-raised-button color="warn" style="margin-right: 9px;" (click)="delete()">Delete</button>
+        <button mat-raised-button (click)="close()">Cancel</button>
+    </div>
+</div>
