@@ -1,23 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="bac5ee64-452c-4300-82ff-2a8e871cd7fc" name="Default Changelist" comment="" />
+    <list default="true" id="bac5ee64-452c-4300-82ff-2a8e871cd7fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/CameraApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/CameraApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/api/CameraController.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/api/CameraController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/config/MongoConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/config/MongoConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/config/WebConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/config/WebConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/Camera.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/Camera.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/CameraWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/CameraWrapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/ResponseMessage.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/ResponseMessage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/converters/CameraConverter.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/converters/CameraConverter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/converters/Converter.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/converters/Converter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/dtos/CameraDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/dtos/CameraDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/enums/MessageType.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/models/enums/MessageType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/repo/CameraRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/repo/CameraRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/services/implementations/CameraServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/services/implementations/CameraServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/services/interfaces/CameraService.class" beforeDir="false" afterPath="$PROJECT_DIR$/camera-backend/target/classes/com/example/camera/services/interfaces/CameraService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/components/camera-form/camera-form.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/app/components/camera-form/camera-form.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/components/camera-form/camera-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/app/components/camera-form/camera-form.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/components/camera-form/camera-form.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/components/camera/camera.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/app/components/camera/camera.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/components/camera/camera.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/app/components/camera/camera.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/components/camera/camera.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/components/camera/camera.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/app/components/camera/camera.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/services/camera-service.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/app/services/camera-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/app/services/camera-service.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/camera-frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/camera-frontend/src/styles.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1t4AISY3l1F1l1N9nZXftQMZgcl" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/camera-backend" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/home/andidarzeza/Documents/AndiDarzeza/camera-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CameraApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="camera" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.camera.CameraApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -28,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1622017908353</updated>
       <workItem from="1622017910044" duration="10000" />
+      <workItem from="1687440959234" duration="792000" />
     </task>
     <servers />
   </component>

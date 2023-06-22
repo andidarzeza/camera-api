@@ -1,27 +1,37 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Camera } from 'src/app/model/camera';
-import { FormGroup, FormBuilder, NgForm, Validators } from '@angular/forms';
-import { CameraServiceService } from 'src/app/services/camera-service.service';
+import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+import { Camera } from 'src/app/model/camera';
+import { CameraService } from 'src/app/services/camera.service';
+
+
 @Component({
   selector: 'app-camera-form',
   templateUrl: './camera-form.component.html',
   styleUrls: ['./camera-form.component.css']
 })
-export class CameraFormComponent implements OnInit {
-  cameraGroup: FormGroup;
-  updateMode = false;
-  saveUpdateButtonLabel = "Add";
-  
+export class CameraFormComponent implements OnInit, OnDestroy {
 
-  constructor(private service: CameraServiceService, private fb: FormBuilder, public dialogRef: MatDialogRef<CameraFormComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any) { }
+  cameraGroup: FormGroup = this.fb.group({
+    name: ['', [Validators.required]],
+    model: ['', [Validators.required]],
+    resolution: ['', [Validators.required]],
+    ip: ['', [Validators.required]]
+  });
+  
+  private unsubscribe$ = new Subject<void>();
+
+  constructor(
+    private cameraService: CameraService, 
+    private fb: FormBuilder, 
+    public dialogRef: MatDialogRef<CameraFormComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  ) { }
+  
   ngOnInit() {
-    this.setInitialForm();
     if(this.data) {
-      this.updateMode = true;
-      this.saveUpdateButtonLabel = "Update";
       this.updateForm(this.data);
     }    
   }
@@ -30,30 +40,35 @@ export class CameraFormComponent implements OnInit {
     this.cameraGroup.patchValue(camera);
   }
 
-  setInitialForm(): void {
-    this.cameraGroup = this.fb.group({
-      name: ['', [Validators.required]],
-      model: ['', [Validators.required]],
-      resolution: ['', [Validators.required]],
-      ip: ['', [Validators.required]]
-    });
-  }
-
   onCancel(): void {
-    this.dialogRef.close(false);
+    this.dialogRef.close();
   }
 
-  onSubmit(): void {
-    if(this.updateMode) {
-      this.service.update(this.data.id, this.cameraGroup.value).subscribe((res:any)=>{
-        this.dialogRef.close(true);
-      });
-    } else {
-      this.service.add(this.cameraGroup.value).subscribe((res: any) => {
-        console.log(res);
-        this.dialogRef.close(true);
-      })
+  save(): void {
+    this.cameraService
+      .save(this.buildPayload(), this.editMode)
+      .pipe(this.takeUntilDestroyed())
+      .subscribe(()=>this.dialogRef.close(true));
+  }
+
+  private buildPayload(): Camera {
+    if(this.editMode) {
+      return {...this.cameraGroup.value, id: this.data.id} as Camera;
     }
+    return this.cameraGroup.value as Camera;
+  }
+
+  get editMode() {
+    return this.data;
+  }
+
+  private takeUntilDestroyed(): any {
+    return takeUntil(this.unsubscribe$)
+  }
+
+  ngOnDestroy(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
   }
 
 }

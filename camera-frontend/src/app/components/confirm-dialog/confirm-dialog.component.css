@@ -1,6 +1,6 @@
 .dialog-actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .buttons {
